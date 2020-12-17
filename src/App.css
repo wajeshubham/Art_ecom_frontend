@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.body {
+  font-family: "Poppins", sans-serif;
+}
+.App {
+  font-family: "Poppins", sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.g-button {
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  color: black;
+  transform: none;
+  -webkit-box-shadow: 2px 1px 6px 0px rgba(48, 50, 50, 0.62);
+  -moz-box-shadow: 2px 1px 6px 0px rgba(48, 50, 50, 0.62);
+  box-shadow: 2px 1px 6px 0px rgba(48, 50, 50, 0.62);
+}
+
+.g-button:hover {
+  transform: none;
+  background-color: #f7f7f7;
+  color: black;
+}
+
+.nav {
+  height: 8vh !important;
+  /* background-color: #ddc867 !important; */
+}
+
+.status-label {
+  min-width: 66px;
+  display: inline-block;
+  font-size: 12px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+}
+
+.label {
+  display: inline;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  padding: 0.5em 0.5em 0.5em;
+  border-radius: 10px;
+}
+
+.label-success {
+  background-color: rgb(39, 194, 76);
+}
+@media screen and (min-width: 713px) and (max-width: 768px) {
+  .logout {
+    margin-left: -1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-img {
+    margin-left: -1rem;
+    margin-bottom: -0.8rem;
+  }
+
+  .line {
+    width: 25px;
+    height: 2.5px;
+    border-radius: 15px;
+    background-color: white;
+    margin: 5px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .login-card {
+    right: 0 !important;
+    top: 15vh !important;
+    position: relative !important;
+    width: auto !important;
+    align-items: center !important;
+  }
+
+  .signup-card {
+    right: 0 !important;
+    top: 15vh !important;
+    position: relative !important;
+    width: auto !important;
+    align-items: center !important;
+    -webkit-box-shadow: 10px 12px 20px -8px rgba(85, 85, 85, 1);
+    -moz-box-shadow: 10px 12px 20px -8px rgba(85, 85, 85, 1);
+    box-shadow: 10px 12px 20px -8px rgba(85, 85, 85, 1);
+  }
+
+  .login-card input,
+  .fp {
+    width: 310px !important;
+    margin-left: 1.5rem !important;
+  }
+
+  .signup-card input {
+    width: 310px !important;
+    margin-left: 1.5rem !important;
+  }
+
+  .signup-form {
+    width: 320px !important;
+  }
+
+  .login-cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .img-col {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start !important;
+    margin-right: 0rem !important;
+    align-items: center !important;
+  }
+
+  .e-btn {
+    margin-top: 1rem !important;
+  }
+  .txt-email,
+  .signup-card li {
+    margin-left: 1.5rem !important;
+  }
+}
+
+.login-txt {
+  margin-left: 3.3rem !important;
+}
+
+.forgot-txt {
+  margin-left: 13rem !important;
+}
+
+.signup-card {
+  -webkit-box-shadow: 10px 12px 20px -8px rgba(200, 200, 200, 1);
+  -moz-box-shadow: 10px 12px 20px -8px rgba(200, 200, 200, 1);
+  box-shadow: 10px 12px 20px -8px rgba(200, 200, 200, 1);
+}
+
+.login-card {
+  -webkit-box-shadow: 10px 12px 20px -8px rgba(200, 200, 200, 1);
+  -moz-box-shadow: 10px 12px 20px -8px rgba(200, 200, 200, 1);
+  box-shadow: 10px 12px 20px -8px rgba(200, 200, 200, 1);
+}
+
+.card-listing {
+  -webkit-box-shadow: 10px 12px 20px -8px rgba(225, 225, 225, 1);
+  -moz-box-shadow: 10px 12px 20px -8px rgba(225, 225, 225, 1);
+  box-shadow: 10px 12px 20px -8px rgba(225, 225, 225, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,147 @@
+/* .listing-board {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: flex-start;
+  flex-direction: row;
+} */
+
+.parent-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-left: 0.5rem;
+}
+
+.site-layout-background {
+  background: #fff;
+}
+.ant-card-body {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-right: 0px !important;
+  padding-left: 3px !important;
+}
+
+.cover-image {
+  transition: transform 0.7s ease;
+}
+
+.cover-image:hover {
+  transform: scale(1.05);
+}
+
+.hidden {
+  display: none;
+}
+
+.ls-form {
+  /* margin-top: 3rem !important; */
+  padding: 4rem !important;
+}
+
+.ant-form-item-label {
+  text-align: left;
+  margin-right: 0;
+  padding-right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.ant-col {
+  margin: 0;
+  padding: 0;
+}
+
+.shop-crt-icon {
+  margin: 0 !important;
+  margin-top: -5px !important;
+}
+
+.shop-icon {
+  height: 15px !important;
+  width: 15px !important;
+  color: black;
+}
+
+@media (min-width: 100px) and (max-width: 699px) {
+  .parent {
+    display: flex !important;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    /* padding-left: 0.5rem; */
+  }
+  .site-layout-background {
+    background: none !;
+  }
+
+  .cover-image {
+    width: 100%;
+    height: 50vw !important;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+
+  .shop-crt-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 !important;
+    margin-top: -5px !important;
+    margin-left: 9rem !important;
+  }
+
+  .mob-card {
+    margin-top: 1 !important;
+    margin-bottom: 2 !important;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center !important;
+    flex-direction: row;
+    /* padding-left: 0.5rem; */
+  }
+  .site-layout-background {
+    background: #fff;
+  }
+
+  .cover-image {
+    width: 100%;
+    height: 25vw !important;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    /* padding-left: 0.5rem; */
+  }
+  .site-layout-background {
+    background: #fff;
+  }
+
+  .cover-image {
+    width: 100%;
+    height: 25vw !important;
+    object-fit: cover;
+    border: 1px solid #ddd;
+  }
+}

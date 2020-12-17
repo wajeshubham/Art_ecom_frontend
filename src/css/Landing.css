@@ -1,0 +1,12 @@
+@media (min-width: 100px) and (max-width: 700px) {
+  .mob-img-landing {
+    height: 100% !important;
+    width: 100% !important;
+    background-color: #fff;
+    line-height: 300px !important;
+    text-align: center;
+    background: #364d79;
+    margin-left: auto !important;
+    margin-top: 1rem !important;
+  }
+}
