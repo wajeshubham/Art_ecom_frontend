@@ -4,14 +4,9 @@ import { useHistory, Redirect, Link } from "react-router-dom";
 import Axios from "axios";
 import { server } from "../utils/server";
 import { Spinner, Row, Col, Container } from "reactstrap";
-import { Layout, Empty } from "antd";
+import { Layout } from "antd";
 import ListingCard from "../components/ListingCard";
-import {
-  FaExclamationCircle,
-  FaExclamationTriangle,
-  FaHouseDamage,
-  FaThermometerEmpty,
-} from "react-icons/fa";
+import { FaExclamationCircle } from "react-icons/fa";
 
 function MyCart() {
   const [userCart, setUserCart] = useState([]);
@@ -157,7 +152,7 @@ function MyCart() {
       if (userCart) {
         setLoading(false);
       }
-    }, 5000);
+    }, 2000);
   }, [fetchDetails]);
 
   useEffect(() => {

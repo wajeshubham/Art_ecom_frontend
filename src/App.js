@@ -6,7 +6,7 @@ import "antd/dist/antd.css";
 import "./App.css";
 
 import MyNavbar from "./layouts/header";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import SignIn from "./pages/signin";
 import PageNotFound from "./pages/PageNotFound";
 import Home from "./pages/home";

@@ -2,19 +2,17 @@ import React, { useState, useContext, useEffect } from "react";
 import {
   Navbar,
   Collapse,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
   NavLink,
 } from "reactstrap";
 
-import { AiOutlineDelete, AiOutlineShoppingCart } from "react-icons/ai";
 import { Link, useHistory } from "react-router-dom";
 import UserContext from "../context/UserContext";
-import { message, Badge } from "antd";
+import { message } from "antd";
 import pp from "../assets/default.png";
-import { FaFirstOrder, FaShoppingBasket, FaShoppingCart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
 const MyNavbar = () => {
   const context = useContext(UserContext);

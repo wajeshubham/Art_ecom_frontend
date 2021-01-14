@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Card,
   Button,
@@ -11,7 +11,6 @@ import {
   AiFillHeart,
   AiOutlineDelete,
   AiOutlineHeart,
-  AiOutlineLike,
   AiOutlineShoppingCart,
 } from "react-icons/ai";
 import { FaEdit, FaTrashAlt } from "react-icons/fa";

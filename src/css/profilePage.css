@@ -17,7 +17,7 @@
 .prof-details {
   display: flex;
   margin-top: 1rem;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: column;
 }
 .Center {
@@ -54,7 +54,7 @@
   .prof-details {
     display: flex;
     margin-top: 2rem;
-    justify-content: start;
+    justify-content: flex-start;
     flex-direction: column;
     margin-left: 4rem;
   }
@@ -220,7 +220,7 @@
   .shop-crt-icon {
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: flex-start;
     margin: 0 !important;
     margin-top: -5px !important;
     margin-left: 9rem !important;

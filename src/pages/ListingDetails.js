@@ -15,12 +15,10 @@ import {
   Form,
   Comment,
   message,
-  Tooltip,
   Popconfirm,
 } from "antd";
 import { Row, Col, Spinner } from "reactstrap";
 import "../css/ListingDetails.css";
-import { FaPhone, FaTrashAlt, FaTrashRestore } from "react-icons/fa";
 import TextArea from "antd/lib/input/TextArea";
 
 function ListingDetails(props) {

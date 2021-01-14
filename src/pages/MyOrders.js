@@ -5,7 +5,7 @@ import { useHistory, Redirect } from "react-router-dom";
 import Axios from "axios";
 import { server } from "../utils/server";
 import { Spinner, Row, Col } from "reactstrap";
-import { Layout, Empty } from "antd";
+import { Layout } from "antd";
 import { FaExclamationCircle } from "react-icons/fa";
 
 function MyOrders() {
@@ -46,7 +46,7 @@ function MyOrders() {
       if (orders) {
         setLoading(false);
       }
-    }, 5000);
+    }, 2000);
   }, [orders]);
 
   useEffect(() => {

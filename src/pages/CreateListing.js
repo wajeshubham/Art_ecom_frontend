@@ -1,33 +1,15 @@
 import React, { useState, useContext, useEffect } from "react";
-import {
-  Form,
-  Select,
-  InputNumber,
-  Switch,
-  Radio,
-  Slider,
-  Button,
-  Upload,
-  Rate,
-  Checkbox,
-  Row,
-  Col,
-  Input,
-  Layout,
-} from "antd";
+import { Form, InputNumber, Button, Input, Layout } from "antd";
 import {
   StateDropdown,
   RegionDropdown,
 } from "react-india-state-region-selector";
 import camPic from "../assets/photo-camera.png";
-import { UploadOutlined, InboxOutlined } from "@ant-design/icons";
-import { Container, Label, Spinner } from "reactstrap";
+import { Container, Spinner } from "reactstrap";
 import { server } from "../utils/server";
 import UserContext from "../context/UserContext";
 import Axios from "axios";
-import { toast } from "react-toastify";
-import { useHistory, Redirect, Link } from "react-router-dom";
-import Dragger from "antd/lib/upload/Dragger";
+import { useHistory, Redirect } from "react-router-dom";
 
 //TODO: Set Loading functionality
 
@@ -38,7 +20,6 @@ const CreateListing = () => {
   const [state, setState] = useState("");
   const [region, setRegion] = useState("");
   const [loading, setLoading] = useState(false);
-  const [quantity, setQuantity] = useState(0);
 
   const layout = {
     labelCol: { span: 8 },

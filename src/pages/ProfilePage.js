@@ -3,8 +3,7 @@ import Axios from "axios";
 import { server } from "../utils/server";
 import UserContext from "../context/UserContext";
 import { useHistory, Redirect, Link } from "react-router-dom";
-import { compose } from "redux";
-import { Skeleton, Layout, Col, Row, Button, Empty } from "antd";
+import { Layout, Col, Row, Button, Empty } from "antd";
 import "../css/profilePage.css";
 import ListingCard from "../components/ListingCard";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
@@ -18,7 +17,7 @@ const ProfilePage = () => {
   const [profDetails, setProfDetails] = useState(null);
   const [loading, setLoading] = useState(true);
   const [listings, setListings] = useState([]);
-  const { Header, Content, Sider } = Layout;
+  const { Content } = Layout;
 
   const fetchDetails = async () => {
     try {
@@ -128,7 +127,6 @@ const ProfilePage = () => {
                     ) : null}
                     <a
                       className="email mr-3"
-                      target="_blank"
                       style={{ textDecoration: "none" }}
                       href={`mailto:{response.email}`}
                     >

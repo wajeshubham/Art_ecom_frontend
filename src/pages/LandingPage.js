@@ -9,16 +9,9 @@ import lpphoto5 from "../assets/rd-burman-sketch.jpg";
 import lpphoto6 from "../assets/salman-sketch.jpg";
 import lpphoto7 from "../assets/taapsee-sketch.jpg";
 import lpphoto8 from "../assets/sonakshi-sketch----33.jpg";
-import {
-  FaEnvelope,
-  FaInstagram,
-  FaLinkedin,
-  FaLinkedinIn,
-  FaMailBulk,
-} from "react-icons/fa";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 
 import { Carousel } from "antd";
-import { Link } from "@material-ui/core";
 
 const contentStyle = {
   height: "100%",

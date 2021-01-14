@@ -1,27 +1,16 @@
 import React, { useState, useContext, useEffect } from "react";
 import Axios from "axios";
 
-import {
-  Row,
-  Container,
-  Col,
-  Input,
-  Button,
-  InputGroup,
-  InputGroupAddon,
-  Card,
-  Spinner,
-} from "reactstrap";
+import { Spinner } from "reactstrap";
 import { server } from "../utils/server";
 import "../css/ListingCard.css";
 
-import { Redirect, Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import UserContext from "../context/UserContext";
-import { toast } from "react-toastify";
 import ListingCard from "../components/ListingCard";
-import { Layout, Menu, Breadcrumb } from "antd";
+import { Layout } from "antd";
 
-const { Header, Content, Sider } = Layout;
+const { Content } = Layout;
 
 function Home() {
   const context = useContext(UserContext);
