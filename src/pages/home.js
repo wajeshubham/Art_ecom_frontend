@@ -27,7 +27,7 @@ function Home() {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        Authorization: `Token ${token}`,
+        // Authorization: `Token ${token}`,
       },
     })
       .then((res) => {
@@ -52,55 +52,56 @@ function Home() {
     fetchDetails();
   }, []);
 
-  if (!context.user?.token) {
-    return <Redirect to="/login" />;
-  } else {
-    return (
-      <div>
-        {loading === true ? (
-          <div className="Center">
-            <Spinner color="primary" />
-            <div className="text-primary">Loading...</div>
-          </div>
-        ) : (
-          <Layout style={{ padding: "0 24px 24px", margin: "3rem" }}>
-            <Content
-              className="site-layout-background home-cnt"
-              style={{
-                padding: 24,
-                margin: 0,
-                minHeight: 280,
-              }}
-            >
-              <div className="parent">
-                {listings.map((listing) => (
-                  <ListingCard
-                    className="child"
-                    dis={listing.description}
-                    price={listing.price}
-                    title={listing.title}
-                    image={listing.image}
-                    date={listing.date}
-                    city={listing.city}
-                    state={listing.state}
-                    id={listing.id}
-                    listingUser={listing.user}
-                    activeUser={context.user?.username}
-                    isInProfile={false}
-                    listings={listings}
-                    setListings={setListings}
-                    isInStock={listing.isInStock}
-                    likedUsersList={listing.liked_users}
-                    likesCount={listing.likes}
-                  />
-                ))}
-              </div>
-            </Content>
-          </Layout>
-        )}
-      </div>
-    );
-  }
+  // if (!context.user?.token) {
+  //   return <Redirect to="/login" />;
+  // } else {
+  return (
+    <div>
+      {loading === true ? (
+        <div className="Center">
+          <Spinner color="primary" />
+          <div className="text-primary">Loading...</div>
+        </div>
+      ) : (
+        <Layout style={{ padding: "0 24px 24px", margin: "3rem" }}>
+          <Content
+            className="site-layout-background home-cnt"
+            style={{
+              padding: 24,
+              margin: 0,
+              minHeight: 280,
+            }}
+          >
+            <div className="parent">
+              {listings.map((listing) => (
+                <ListingCard
+                  className="child"
+                  dis={listing.description}
+                  price={listing.price}
+                  title={listing.title}
+                  image={listing.image}
+                  date={listing.date}
+                  city={listing.city}
+                  state={listing.state}
+                  id={listing.id}
+                  listingUser={listing.user}
+                  activeUser={context.user?.username}
+                  isInProfile={false}
+                  listings={listings}
+                  setListings={setListings}
+                  isInStock={listing.isInStock}
+                  likedUsersList={listing.liked_users}
+                  likesCount={listing.likes}
+                  isLoggedIn={context.user?.token}
+                />
+              ))}
+            </div>
+          </Content>
+        </Layout>
+      )}
+    </div>
+  );
+  // }
 }
 
 export default Home;

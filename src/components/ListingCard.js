@@ -18,7 +18,7 @@ import "../css/ListingCard.css";
 import { CardBody, Tooltip } from "reactstrap";
 import Axios from "axios";
 import { server } from "../utils/server";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 
 function ListingCard({
   id,
@@ -41,11 +41,18 @@ function ListingCard({
   isInStock,
   likedUsersList,
   likesCount,
+  isLoggedIn,
 }) {
   const [liked, setLiked] = useState(false);
   const btn = (
     <Button type="primary" size="small" href="/mycart">
       Go to the cart
+    </Button>
+  );
+
+  const loginBtn = (
+    <Button type="primary" size="small" href="/login">
+      Log in
     </Button>
   );
 
@@ -126,6 +133,14 @@ function ListingCard({
       });
     } catch (error) {
       console.log(error);
+      notification.warn({
+        message: `Please log in first!`,
+        placement: "bottomRight",
+        btn: loginBtn,
+        onClick: () => {
+          console.log("login Clicked!");
+        },
+      });
     }
   };
 
@@ -246,6 +261,9 @@ function ListingCard({
                 <>
                   <Button
                     className="btn btn-primary cart-btn"
+                    style={{
+                      display: `${isLoggedIn ? "inline" : "none"}`,
+                    }}
                     onClick={(e) => handleLike(e)}
                     id="like"
                   >

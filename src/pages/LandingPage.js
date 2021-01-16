@@ -267,7 +267,7 @@ const LandingPage = (props) => {
               </span>
             </p>
             <div className="flex justify-center">
-              <a href="/">
+              <a href="/home">
                 <button
                   id="price"
                   style={{ backgroundColor: "#1890ff" }}

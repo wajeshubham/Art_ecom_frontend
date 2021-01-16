@@ -33,12 +33,6 @@ const MyNavbar = () => {
     }
   }, []);
 
-  useEffect(() => {
-    if (context != null) {
-      console.log("------------------------->>>>>>>", context.user?.profile);
-    }
-  }, [context]);
-
   return (
     <Navbar
       style={{ backgroundColor: "#40a9ff" }}
@@ -53,7 +47,7 @@ const MyNavbar = () => {
           tag={Link}
           to={context && context.user?.token ? "/home" : "/"}
         >
-          OLX Clone
+          SketchIt
         </NavLink>
       </NavbarBrand>
 
@@ -148,14 +142,21 @@ const MyNavbar = () => {
           <Nav navbar className="ml-auto">
             <NavItem>
               <NavLink className="text-white" onClick={Toggle}>
-                <a className="text-white" href="#price">
+                <a className="text-white" href="/home">
+                  Artworks
+                </a>
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink className="text-white" onClick={Toggle}>
+                <a className="text-white" href="/#price">
                   Pricing
                 </a>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink className="text-white" onClick={Toggle}>
-                <a className="text-white" href="#cont">
+                <a className="text-white" href="/#cont">
                   Contact us
                 </a>
               </NavLink>
